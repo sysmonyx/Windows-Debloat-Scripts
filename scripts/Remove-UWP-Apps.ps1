@@ -85,6 +85,7 @@ $apps = @(
 
     # Non-Microsoft Apps.
     "2FE3CB00.PicsArt-PhotoStudio"
+    "34791E63.CanonInkjetPrintUtility"
     "46928bounde.EclipseManager"
     "4DF9E0F8.Netflix"
     "613EBCEA.PolarrPhotoEditorAcademicEdition"
