@@ -20,6 +20,7 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 
 # Import Library Modules.
+Write-Output "Importing Library Modules . . . ."
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\New-FolderForced.psm1
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\Takeown.psm1
 

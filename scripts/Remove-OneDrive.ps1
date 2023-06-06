@@ -20,6 +20,7 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 
 # Import Library Modules.
+Write-Output "Importing Library Modules . . . ."
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\New-FolderForced.psm1
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\Takeown.psm1
 
@@ -44,7 +45,9 @@ Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:programdata\Micr
 Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:systemdrive\OneDriveTemp"
 
 # Check if the user's OneDrive directory is empty before removing it.
+Write-Output "Checking if the User's OneDrive directory is empty . . . ."
 If ((Get-ChildItem "$env:userprofile\OneDrive" -Recurse | Measure-Object).Count -eq 0) {
+    Write-Output "Removing User's OneDrive directory . . . ."
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:userprofile\OneDrive"
 }
 
