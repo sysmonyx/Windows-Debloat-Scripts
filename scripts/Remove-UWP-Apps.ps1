@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script removes all the pre-installed UWP apps on a fresh Windows installation.
 #
-#   Last Updated:   22.05.2023
+#   Last Updated:   26.06.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
