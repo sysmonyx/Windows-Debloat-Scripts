@@ -83,6 +83,10 @@ $apps = @(
     "Microsoft.MixedReality.Portal"
     "Microsoft.ScreenSketch"
     "Microsoft.XboxGamingOverlay"
+    "Microsoft.GamingApp"
+    "MicrosoftCorporationII.QuickAssist"
+    "Microsoft.Todos"
+    "Clipchamp.Clipchamp"                                   # New Clipchamp App introduced in Windows-11.
 
     # Non-Microsoft Apps.
     "2FE3CB00.PicsArt-PhotoStudio"
