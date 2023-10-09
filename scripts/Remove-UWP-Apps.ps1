@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script removes all the pre-installed UWP apps on a fresh Windows installation.
 #
-#   Last Updated:   26.06.2023
+#   Last Updated:   09.10.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -87,6 +87,8 @@ $apps = @(
     "MicrosoftCorporationII.QuickAssist"
     "Microsoft.Todos"
     "Clipchamp.Clipchamp"                                   # New Clipchamp App introduced in Windows-11.
+    "MicrosoftWindows.Client.WebExperience"                 # New Widgets App introduced in Windows-11.
+
 
     # Non-Microsoft Apps.
     "2FE3CB00.PicsArt-PhotoStudio"
