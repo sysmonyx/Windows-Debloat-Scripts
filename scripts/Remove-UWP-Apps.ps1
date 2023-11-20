@@ -88,6 +88,8 @@ $apps = @(
     "Microsoft.Todos"
     "Clipchamp.Clipchamp"                                   # New Clipchamp App introduced in Windows-11.
     "MicrosoftWindows.Client.WebExperience"                 # New Widgets App introduced in Windows-11.
+    "Microsoft.OutlookForWindows"                           # New Outlook App introduced in Windows-11 23H2.
+    "Microsoft.PowerAutomateDesktop"                        # Power Automate
 
 
     # Non-Microsoft Apps.
